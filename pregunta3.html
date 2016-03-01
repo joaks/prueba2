@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+</head> 
+<body>
+<style>
+	.evento{
+		background-color: yellow;
+	}
+	#parrafo{
+		background-color: yellow;
+		display: inline;
+	}
+
+</style>
+<script>
+	$(document).ready(function(){
+
+	 
+   
+
+    	$(".evento").click(function(e) {
+        if($(e.target).is('p')){
+            e.preventDefault();
+            return;
+        }
+        $(this).css("background", "red");
+        $("#parrafo").css("background", "red");
+    }); 
+
+    	
+
+
+    });
+   
+
+
+
+
+</script>
+    El div de abajo al cambiarse de color al hacer click
+    <div class="evento">
+        <p id="parrafo"> Hacerme click no deberías cambiar el color </p>
+    </div>
+   
+</body>
+</html>

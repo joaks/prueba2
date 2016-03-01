@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    
+    <style type="text/css">
+    p.hidden{
+    	display: none;
+    }
+    
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script>
+    //El usuario ingresa un número en un promt, luego el sistema debe contar esa cantidad de segundos antes de mostra "hola" en pantalla (sin console log, pero se puede ocupar jquery)
+
+    var tiempoMensaje=prompt(parseInt("ingrese el numero de segundos antes de que apresca hola"));
+ 	tiempoMilisegundos=tiempoMensaje*1000;
+
+ 	$(document).ready(function(){
+    
+    
+		function doStuff() {
+			$("p").removeClass("hidden");
+ 	    
+	}
+		setInterval(doStuff, tiempoMilisegundos);
+
+
+});
+
+
+</script>
+    </script>
+</head>
+<body>
+<p class="hidden">Hola</p>
+
+
+
+</body>
+</html>

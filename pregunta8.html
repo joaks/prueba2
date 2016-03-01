@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		   <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+
+</head>
+<body>
+<script>
+	function validateForm() {
+    var x = document.forms["myForm"]["nombre"]["email"].value;
+    if (x == null || x == "") {
+        alert("faltan campos");
+        return false;
+    }
+}
+</script>
+
+<form name ="myForm" action="action_page.php">
+  First name:<br>
+  <input type="text" name="nombre" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="email" value="">
+  <br><br>
+  
+  <input class="bottonSubmit "type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

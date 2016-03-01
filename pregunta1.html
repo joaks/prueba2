@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+var total = 0;
+do {
+ //   var ingreso = [prompt("ingresa un número")];
+ 
+ var ingreso = [];
+ var pregunta = prompt("enter your number");
+
+ 		if(isNaN(pregunta)){
+
+ 		} else{
+ 			ingreso.push(parseInt(pregunta));
+ 		}
+ 		$.each(ingreso,function() {
+   	 	total += this;
+		});
+  }
+ 
+
+while (pregunta != "fin"){
+	
+		 	console.log(total)
+
+ }
+
+
+
+</script>
+</body>
+</html>
